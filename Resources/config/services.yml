@@ -1,0 +1,4 @@
+services:
+  settings_in_db_service:
+      class: MarcinJozwikowski\SettingsInDBBundle\Services\SettingsInDbService
+      arguments: [@service_container, @doctrine.orm.entity_manager]
