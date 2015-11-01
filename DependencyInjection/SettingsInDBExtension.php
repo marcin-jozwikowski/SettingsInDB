@@ -24,6 +24,7 @@ class SettingsInDBExtension extends Extension
 
         $container->setParameter(Configuration::CONFIG_ROOT.'.'.Configuration::ALLOW_INSERTS, $config[Configuration::ALLOW_INSERTS]);
         $container->setParameter(Configuration::CONFIG_ROOT.'.'.Configuration::RETURN_NULL, $config[Configuration::RETURN_NULL]);
+        $container->setParameter(Configuration::CONFIG_ROOT.'.'.Configuration::READ_ALL, $config[Configuration::READ_ALL]);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

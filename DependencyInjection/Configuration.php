@@ -15,6 +15,7 @@ class Configuration implements ConfigurationInterface
     const CONFIG_ROOT = 'settings_in_db';
     const ALLOW_INSERTS = 'allow_inserts';
     const RETURN_NULL = 'return_null_on_not_found';
+    const READ_ALL = 'read_all_entries_at_first_use';
     /**
      * {@inheritdoc}
      */
@@ -27,6 +28,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->booleanNode(Configuration::ALLOW_INSERTS)->defaultTrue()->end()
                 ->booleanNode(Configuration::RETURN_NULL)->defaultFalse()->end()
+                ->booleanNode(Configuration::READ_ALL)->defaultTrue()->end()
             ->end();
 
         return $treeBuilder;
