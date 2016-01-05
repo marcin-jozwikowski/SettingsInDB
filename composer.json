@@ -15,7 +15,7 @@
   "require" : {
   },
   "autoload" : {
-    "psr-4" : { "MarcinJozwikowski\\SettingsInDBBundle" : ""}
+    "psr-4" : { "MarcinJozwikowski\\SettingsInDBBundle\\" : ""}
   },
   "repositories" : [{
   }]
