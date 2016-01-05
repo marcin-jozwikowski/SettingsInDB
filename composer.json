@@ -1,5 +1,5 @@
 {
-  "name" : "marcinjozwikowski/settingsindbbundle",
+  "name" : "marcin_jozwikowski/settings_in_db_bundle",
   "description" : "A Symfony2 bundle that allows an easy key-value storage in DB",
   "type" : "symfony-bundle",
   "authors" : [{
