@@ -48,6 +48,6 @@ Default configuration:
         read_all_entries_at_first_use: true
   ```
   
-  **allow_inserts** - if set to true, persists a new key-value pair if none is found
-  **return_null_on_not_found** - if nothing found and allow_inserts = false, returns null instead of throwing an exception
-  **read_all_entries_at_first_use** - if set to true loads all records at first use and searches in internal array insted of querying
+*  **allow_inserts** - if set to true, persists a new key-value pair if none is found
+*  **return_null_on_not_found** - if nothing found and allow_inserts = false, returns null instead of throwing an exception
+*  **read_all_entries_at_first_use** - if set to true loads all records at first use and searches in internal array insted of querying
